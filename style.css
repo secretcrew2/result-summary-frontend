@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size:18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+#box{
+    background-color: white;
+    max-width: 1000px;
+    min-height: 600px;
+    margin: 1vw auto;
+    display: flex;
+}
+#container{
+    display: flex;
+    max-width: 570px;
+    /* border: 2px solid black; */
+    margin:auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 7px -8px rgba(0,0,0,0.43);
+}
+.font-text{
+    font-size:0.8rem
+}
+.stat-num{
+    color: black;
+}
+.opac{
+    color: hsl(241, 100%, 89%);
+}
+#result{
+    flex: 1;
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    padding: 35px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#circle{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#content{
+    width: 150px;
+    aspect-ratio: 1/1;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#content #score{
+    font-size: 3rem;
+    font-weight: 800;
+}
+#description h3{
+    margin-bottom: 20px;
+}
+#summary{
+    flex:1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#summary > *{
+    margin-bottom: 20px;
+}
+#summary > *:last-child{
+    margin-bottom: 0;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+}
+.stat{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 700
+}
+li {
+    padding: 10px;
+    margin: 5px;
+}
+#reaction{
+    background-color: hsla(0, 100%, 67%, 0.02);
+    color: hsla(0, 100%, 67%)
+}
+#memory{
+    background-color: hsla(39, 100%, 56%, 0.02);
+    color: hsl(39, 100%, 56%);
+}
+#verbal{
+    background-color:hsla(166, 100%, 37%, 0.02);
+    color: hsl(166, 100%, 37%)
+}
+#visual{
+    background-color: hsla(234, 85%, 45%, 0.02);
+    color: hsl(234, 85%, 45%)
+}
+button{
+    border-style: none;
+    padding: 15px;
+    border-radius: 20px;
+    color:hsl(243, 64%, 95%);
+    background-color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+button:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+.wako-kasabot{
+    display: flex;
+}
+img{
+    margin-right: 5px;
+}
+#result h4{
+    margin-bottom:20px;
+}
+
+@media (max-width: 500px){
+    #box{
+        margin: 0 auto;
+    }
+    #container{
+        box-shadow: none;
+        flex-direction: column;
+    }
+    #result{
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+    /* #content{
+        width: 50%;
+    } */
+    #result h4, #circle{
+        margin-bottom: 20px;
+    }
+}
