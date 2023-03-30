@@ -6,13 +6,13 @@ function someFunction() {
 
     let score = Math.round((reactionScore + memoryScore + verbalScore + visualScore ) / 4)
     
-    const container = document.querySelector('#container');
+    const container = document.querySelector('.container');
 
     container.querySelector('#reaction-score').innerHTML=reactionScore + " ";
     container.querySelector('#memory-score').innerHTML=memoryScore + " ";
     container.querySelector('#verbal-score').innerHTML=verbalScore + " ";
     container.querySelector('#visual-score').innerHTML=visualScore + " ";
-    container.querySelector('#score').innerHTML=score;
+    container.querySelector('#stat-score').innerHTML=score;
 
     let description;
     let scoreWord;
